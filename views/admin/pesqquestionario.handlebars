@@ -1,0 +1,1343 @@
+<body>
+  
+ 
+<form id="formPesq" name="radioPesq" action='/cadumbler' method="POST"  onsubmit="contviewdisplayFechamento()">   
+  <div id="spinnercontainer" class="container">
+ 
+  <hr>
+  <div class="d-flex justify-content-center">
+<div class="spinner-grow text-primary" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+</div>
+  <hr>
+
+ </div>
+
+ <div id="firstcontainer" class="container" style="visibility:hidden">
+   
+  <p>
+      <img src="/img/Ufba01.jpg" class="rounded float-right" alt = "Sem Imagem" width="100px" height="40px" > 
+   
+      <img src="/img/Ufba.jpg" class="rounded float-left" alt = "Sem Imagem" width="50px" height="40px" >
+         <img src="/img/Psico.jpg" class="rounded mx-auto d-block" alt = "Sem Imagem" width="50px" height="40px" >   
+  
+  </p>
+<p id="termo">Termo de Consentimento Informado Livre e Esclarecido</p>
+
+  <h6 class="alert-heading">Prezado(a) participante,</h6>
+  <p>Esta pesquisa estuda as relações entre emoções e trabalho. Trata-se de uma tese de doutorado, vinculada ao grupo de pesquisa emoções e afetos em contextos de trabalho, do programa de Pós-graduação em Psicologia da Universidade Federal da Bahia - UFBA. O convite se deve à sua ocupação institucional ligada à atividade de gestão. Os resultados e as informações individuais serão analisadas apenas para fins acadêmicos e de publicação científica. </p>
+ 
+<p>A pesquisa oferece baixo risco, embora seja solicitado um contato de e-mail válido, é assegurando o anonimato. Qualquer dado que possa identificá-lo, será omitido na divulgação dos resultados da pesquisa e o material será armazenado em local seguro, sob responsabilidade da pesquisadora. Ao final da pesquisa, todo material será mantido em arquivo, por pelo menos 5 anos, conforme Resolução 466/12. A qualquer momento, durante a pesquisa, ou posteriormente, você poderá solicitar do pesquisador informações sobre sua participação e/ou sobre a pesquisa, o que poderá ser feito através dos meios de contato explicitados neste Termo.</p>
+<p>Ressalta-se que sua participação tem grande contribuição, os benefícios relacionados com a sua participação vão contribuir para uma melhor compreensão das medidas psicométricas, além das possibilidades de contribuições sociais, econômicas e/ou científicas destacando a importância da gestão pública nas IES, contribuindo também para o desenvolvimento de capacitações e políticas de saúde do trabalhador. Garantimos que você não sofrerá nenhum desconforto durante a sua participação neste estudo.</p>
+<p>Sua participação nesta pesquisa é voluntária, sendo seu direito recusar a participar ou desistir a qualquer momento durante o preenchimento do formulário, não implicando em nenhum prejuízo em sua relação com as instituições envolvidas e a pesquisadora responsável. No entanto, para que seus dados sejam considerados, é necessário o PREENCHIMENTO COMPLETO das questões a seguir, com duração aproximadamente de 35 minutos. Responda as questões de forma espontânea e autêntica, expressando o quanto você reagiria para cada situação de contexto de trabalho apresentada no formulário. Se acontecer algum problema ou dúvida, você poderá se comunicar com a pesquisadora responsável: Louise Cristine Santos Sobral, pelo e-mail: louise_sobral@hotmail.com</p>
+  <p>Em caso de dúvida quanto à condução ética do estudo, entre em contato com o Comitê de Ética em Pesquisa do Instituto de Psicologia – CEPIPS*. O Comitê de Ética é a instância que tem por objetivo defender os interesses dos participantes da pesquisa em sua integridade e dignidade e para contribuir no desenvolvimento da pesquisa dentro de padrões éticos. Dessa forma o comitê tem o papel de avaliar e monitorar o andamento do projeto de modo que a pesquisa respeite os princípios éticos de proteção aos direitos humanos, da dignidade, da autonomia, da não maleficência, da confidencialidade e da privacidade”. O termo é redigido em duas vias, sendo uma para o participante e outra para o pesquisador. <span style="font-weight:bold"> <a href="/down/TCLE.pdf">Clique aqui</a></span>, caso queira baixar arquivo com sua via.</p>
+ 
+  
+  <hr>
+
+<div class="form-row">
+    
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" id="lab" for="invalidCheck">
+        Concordo com o termo.
+      </label>
+      <div class="invalid-feedback">
+        Você deve concordar, antes de continuar...
+      </div>
+     
+    </div>
+    <button id ="firstnextButton" type="button" class="next-btn" onclick="contviewdisplayMessage()">Formulário</button>
+
+  </div>
+  
+
+
+<p id="pfoot">*Endereço do Comitê de Ética em Pesquisa para recurso ou reclamações do sujeito pesquisado
+Comitê de Ética em Pesquisa do Instituto de Psicologia (CEP/IPS) da UFBA
+Rua Aristides Novis, Campus São Lázaro, 197, Federação, CEP 40.170-055, Salvador, Bahia, telefone (71)3283.6457, E-mail : cepips@ufba.br v.pesq-14-09-2020-deploy-01:39
+</p>
+
+</div>
+
+<div id="quizMessage" class="container"  style="visibility:hidden" > 
+  <br>
+
+   <div class="form-row">
+    <p id="pmessage">Caro (a), gestor (a), Você responderá um formulário com duração média de 35 minutos.  Você receberá a devolutiva das suas respostas ao final do formulário. Atenção, para que suas respostas sejam consideradas, você tem que responder até o final.
+   <br>
+   </p>
+<button id ="firstnextButton" type="button" class="next-btn" onclick="contviewdisplayContainer()">Formulário</button>
+
+
+</div>
+</div>
+ 
+  <div id="quizresult" class="container" style="visibility:hidden" > 
+   <div class="row">
+     <div id="descPart04" class="question99"></div>
+    </div>  
+      
+
+   <div class="form-row">
+       
+      <!--    <label id="Emsg"  class="my-1 mr-2" for="Emsg" >Message</label> -->
+      <label id="EmailLab"  for="EmailInput" >Email</label>
+      <input type="email" class="form-control input-lg " id="EmailInput" placeholder="Seu email" name="Email" required>
+      <span class='msg-erro msg-email'></span>
+   </div>
+    
+   <div class="form-row">
+      <label id="InstituicaoDescLab"  class="my-1 mr-2" for="InstitInput" >Instituição</label>
+      
+      <input type="text" class="form-control input-sm" id="InstitInput" placeholder="Instituição" name="InstitDesc" required>
+       <span class='msg-erro msg-instdsc'></span>
+   </div>
+
+ <!--  <div class="form-row-md-4">
+      <label id="PhoneLabel" class="my-1 mr-2" for="phone" style="visibility:hidden">Fone.:</label>
+ 
+     <input type="tel" class="form-control" id="PhoneInput" style="visibility:hidden" name="Fone" maxlength= "11" pattern="[0-9]{11}" placeholder="99999999999" 
+       required >
+       <span class='msg-erro msg-phone'></span>
+   </div> 
+     -->
+  
+<div class="form-row">
+ <label id="SexoLab" class="my-1 mr-2" for="sexoLab">Sexo:</label>
+ <select class="custom-select custom-select-sm" id="Sexo" name="Sexo" required >
+  <option value="">Sexo:</option>
+  <option value="Masculino">Masculino</option>
+  <option value="Feminino">Feminino</option>
+  <option value="Prefiro Não Identificar">Prefiro Não Identificar</option>
+ </select>
+
+ <span class='msg-erro msg-sexo'></span>
+</div>
+<div class="form-row">
+ <label id="IdadeLab" class="my-1 mr-2" for="Idade">Idade</label>
+<select class="custom-select custom-select-sm" name="Idade" id="Idade" required >
+  <option value="">Idade</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+  <option value="32">32</option>
+  <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+  <option value="43">43</option>
+  <option value="44">44</option>
+  <option value="45">45</option>
+  <option value="46">46</option>
+  <option value="47">47</option>
+  <option value="48">48</option>
+  <option value="49">49</option>
+  <option value="50">50</option>
+  <option value="51">51</option>
+  <option value="52">52</option>
+  <option value="53">53</option>
+  <option value="54">54</option>
+  <option value="55">55</option>
+  <option value="56">56</option>
+  <option value="57">57</option>
+  <option value="58">58</option>
+  <option value="59">59</option>
+  <option value="60">60</option>
+  <option value="61">61</option>
+  <option value="62">62</option>
+  <option value="63">63</option>
+  <option value="64">64</option>
+  <option value="65">65</option>
+  <option value="66">66</option>
+  <option value="67">67</option>
+  <option value="68">68</option>
+  <option value="69">69</option>
+  <option value="70">70</option>
+  <option value="71">71</option>
+  <option value="72">72</option>
+  <option value="73">73</option>
+  <option value="74">74</option>
+  <option value="75">75</option>
+  <option value="76">76</option>
+  <option value="77">77</option>
+  <option value="78">78</option>
+  <option value="79">79</option>
+</select>
+ <span class='msg-erro msg-idade'></span>
+</div>
+
+<div class="form-row">
+ 
+<label id="EscolaridadeLab" class="my-1 mr-2" for="Escolaridade">Escolaridade:</label>
+<select class="custom-select custom-select-sm" id="Escolaridade" name="Escolaridade" required >
+  <option value="">Escolaridade:</option>
+  <option value="Ensino Médio Completo">Ensino Médio Completo</option>
+  <option value="Nível Superior Incompleto">Nível Superior Incompleto</option>
+  <option value="Nível Superior Completo">Nível Superior Completo</option>
+  <option value="Especialização">Especialização</option>
+  <option value="Mestrado">Mestrado</option>
+  <option value="Doutorado">Doutorado</option>
+  <option value="Pós-Doutorado">Pós-Doutorado</option>
+ </select>
+
+ <span class='msg-erro msg-escola'></span>
+ 
+</div>
+
+<div class="form-row">
+<label id="EstadoCivilLab" class="my-1 mr-2" for="estadoCivil">Estado Civil:</label>
+<select class="custom-select custom-select-sm" id="EstadoCivil" name="EstadoCivil" required >
+  <option value="">Estado Civil:</option>
+  <option value="Solteiro(a)">Solteiro(a)</option>
+  <option value="Separado(a)">Separado(a)</option>
+  <option value="Casado(a)/União Estável">Casado(a)/União Estável</option>
+  <option value="Viuvo(a)">Viuvo(a)</option>
+  </select>
+
+  <span class='msg-erro msg-estcivil'></span>
+
+</div>
+<div class="form-row">
+ <label id="InstituicaoLab" class="my-1 mr-2" for="Instituicao">Instituição:</label>
+<select class="custom-select custom-select-sm" id="Instituicao" name="Instituicao" required >
+  <option value="">Instituição:</option>
+  <option value="Estadual">Estadual</option>
+  <option value="Federal">Federal</option>
+ 
+  </select>
+   <span class='msg-erro msg-instituicao'></span>
+</div>
+
+<div class="form-row">
+
+<label id="SetorLab" class="my-1 mr-2" for="Setor">Setor</label>
+<select class="custom-select custom-select-sm" id="Setor" name="Setor" required >
+  <option value="">Setor:</option>
+  <option value="Acadêmico">Acadêmico(Gestão de Ensino, Extensão, Pesquisa)</option>
+  <option value="Planejamento">Planejamento Técnico(Gestão Administrativa ou TecnológicaFederal)</option>
+ 
+  </select>
+
+  <span class='msg-erro msg-setor'></span>
+
+</div>
+
+<div class="form-row">
+<label id="LideraEquipeLab" class="my-1 mr-2" for="Lideranca">Lidera Equipe ?</label>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="Lideran" name="Lideranca" value= "Não" class="custom-control-input" required >
+  <label class="custom-control-label" for="Lideran">Não</label>
+ </div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="Lideras" name="Lideranca" value= "Sim" class="custom-control-input" required >
+  <label class="custom-control-label" for="Lideras">Sim</label>
+  </div>
+   <span class='msg-erro msg-lideraequipe'></span>
+<div>
+<label id="QtPessoasLab" class="my-1 mr-2" for="QtPessoas" style="visibility:hidden" >Quantas pessoas ?</label>
+<select class="custom-select custom-select-sm" id="QtPessoas" style="visibility:hidden" name ="QtPessoas"  >
+  <option value="">QtPessoas</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+  <option value="05">05</option>
+  <option value="06">06</option>
+  <option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+  <option value="32">32</option>
+  <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+  <option value="43">43</option>
+  <option value="44">44</option>
+  <option value="45">45</option>
+  <option value="46">46</option>
+  <option value="47">47</option>
+  <option value="48">48</option>
+  <option value="49">49</option>
+  <option value="50">50</option>
+  <option value="mais de 50"> mais de 50</option>
+  </select>
+ <span class='msg-erro msg-qtpessoas'></span>
+</div>
+<!--
+
+<div class="form-row">-->
+  <div>
+<label id="TempoLideraPessoasLab" class="my-1 mr-2" for="TempoLideraPessoas" style="visibility:hidden" >Há quantos anos ?</label>
+<select class="custom-select custom-select-sm" id="TempoLideraPessoas" name ="TempoLideraPessoas" style="visibility:hidden"  >
+  <option value="">Tempo Lidera Pessoas</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+  <option value="05">05</option>
+  <option value="06">06</option>
+  <option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+  <option value="32">32</option>
+  <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+ 
+  
+</select>
+ <span class='msg-erro msg-tempoliderapessoas'></span>
+</div>
+</div>
+
+<div class="form-row">
+<label id="GestorLab" class="my-1 mr-2" for="tatuaGestorLab">Qual nível de Gestão:</label>
+<select class="custom-select custom-select-sm" id="AtuaGestorLab" name="Gestao" required >
+  <option value="">Qual nível de Gestão:</option>
+  <option value="Alta Direção (diretoria/direção geral)">Alta Direção (diretoria/direção geral)</option>
+  <option value="Intermediário (há chefia acima de você)">Intermediário (há chefia acima de você)</option>
+  <option value="Básico (você é chefia imediata, supervisão e há chefia acima de você)">Básico (você é chefia imediata, supervisão e há chefia acima de você)</option>
+ </select>
+ <span class='msg-erro msg-gestao'></span>
+</div>
+
+<div class="form-row">
+<label id="TFuncaoLab" class="my-1 mr-2" for="TFuncao">Tempo na Função de Gestão, aproximadamente, em anos.:</label>
+<select class="custom-select custom-select-sm" id="TFuncao" name ="TempoFuncaoGestao" required >
+  <option value="">TFunção</option>
+  <option value="01">01</option>
+  <option value="02">02</option>
+  <option value="03">03</option>
+  <option value="04">04</option>
+  <option value="05">05</option>
+  <option value="06">06</option>
+  <option value="07">07</option>
+  <option value="08">08</option>
+  <option value="09">09</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+  <option value="22">22</option>
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">27</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+  <option value="32">32</option>
+  <option value="33">33</option>
+  <option value="34">34</option>
+  <option value="35">35</option>
+  <option value="36">36</option>
+  <option value="37">37</option>
+  <option value="38">38</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  </select>
+<span class='msg-erro msg-tempofuncaogestao'></span>
+</div>
+
+       <div class="form-row">
+       <hr>
+       <button id ="firstnextButton" type="button" class="next-btn" onclick="contviewdisplayformulario()">Formulário</button>
+
+      
+  </div>
+   </div>  
+</div>
+ <div id="quizcontainer" class="container" style="visibility:hidden" >
+     
+     <div class="row">
+   
+<div id="descPart" class="question99"></div>
+
+    </div>
+
+    <div class="row">
+       <div id="imag" class="imag00">
+         
+       <p id="pimag">  <img id = "imagparte" class="rounded mx-auto d-block" alt = "Sem Imagem" > </p>  
+ 
+  </div>
+
+   </div>
+    
+    <div class="row">
+     
+    <div id="questionPrinc" class="question00"></div>
+     
+    </div>
+
+
+     <div class="row">
+    <div id="questionSubA" name="questSubA" class="question01"></div>
+   
+   
+     <div id="opcaoA">
+    <label class="option" id="lblOpta_1"><input type="radio" id="inpOpta_1" name="optiona" value="1"/> <span id="opta_1"></span></label>
+    <label class="option" id="lblOpta_2"><input type="radio" id="inpOpta_2" name="optiona" value="2"/> <span id="opta_2"></span></label>
+    <label class="option" id="lblOpta_3"><input type="radio" id="inpOpta_3" name="optiona" value="3"/> <span id="opta_3"></span></label>
+    <label class="option" id="lblOpta_4"><input type="radio" id="inpOpta_4" name="optiona" value="4"/> <span id="opta_4"></span></label>
+    <label class="option" id="lblOpta_5"><input type="radio" id="inpOpta_5" name="optiona" value="5"/> <span id="opta_5"></span></label>
+
+</div>
+</div>
+ <div class="row">
+    <div id="questionSubB" class="question01"></div>
+     <div id="opcaoB">
+    <label class="option" id="lblOptb_1"><input type="radio" id="inpOptb_1" name="optionb" value="1"/> <span id="optb_1"></span></label>
+    <label class="option" id="lblOptb_2"><input type="radio" id="inpOptb_2" name="optionb" value="2"/> <span id="optb_2"></span></label>
+    <label class="option" id="lblOptb_3"><input type="radio" id="inpOptb_3" name="optionb" value="3"/> <span id="optb_3"></span></label>
+    <label class="option" id="lblOptb_4"><input type="radio" id="inpOptb_4" name="optionb" value="4"/> <span id="optb_4"></span></label>
+    <label class="option" id="lblOptb_5"><input type="radio" id="inpOptb_5" name="optionb" value="5"/> <span id="optb_5"></span></label>
+</div>
+</div>
+ <div class="row">
+    <div id="questionSubC" class="question01"></div>
+     <div id="opcaoC">
+    <label class="option" id="lblOptc_1"><input type="radio" id="inpOptc_1" name="optionc" value="1"/> <span id="optc_1"></span></label>
+    <label class="option" id="lblOptc_2"><input type="radio" id="inpOptc_2" name="optionc" value="2"/> <span id="optc_2"></span></label>
+    <label class="option" id="lblOptc_3"><input type="radio" id="inpOptc_3" name="optionc" value="3"/> <span id="optc_3"></span></label>
+    <label class="option" id="lblOptc_4"><input type="radio" id="inpOptc_4" name="optionc" value="4"/> <span id="optc_4"></span></label>
+    <label class="option" id="lblOptc_5"><input type="radio" id="inpOptc_5" name="optionc" value="5"/> <span id="optc_5"></span></label>
+</div>
+</div>
+ <div class="row">
+    <div id="questionSubD" class="question01"></div>
+      <div id="opcaoD">
+    <label class="option" id="lblOptd_1"><input type="radio" id="inpOptd_1" name="optiond" value="1"/> <span id="optd_1"></span></label>
+    <label class="option" id="lblOptd_2"><input type="radio" id="inpOptd_2" name="optiond" value="2"/> <span id="optd_2"></span></label>
+    <label class="option" id="lblOptd_3"><input type="radio" id="inpOptd_3" name="optiond" value="3"/> <span id="optd_3"></span></label>
+    <label class="option" id="lblOptd_4"><input type="radio" id="inpOptd_4" name="optiond" value="4"/> <span id="optd_4"></span></label>
+    <label class="option" id="lblOptd_5"><input type="radio" id="inpOptd_5" name="optiond" value="5"/> <span id="optd_5"></span></label>
+</div>
+</div>
+ <div class="row">
+ <div id="questionSubE" class="question01"></div>
+  <div id="opcaoD">
+    <label class="option" id="lblOpte_1"><input type="radio"  id="inpOpte_1" name="optione" value="1"/> <span id="opte_1"></span></label>
+    <label class="option" id="lblOpte_2"><input type="radio"  id="inpOpte_2" name="optione" value="2"/> <span id="opte_2"></span></label>
+    <label class="option" id="lblOpte_3"><input type="radio"  id="inpOpte_3" name="optione" value="3"/> <span id="opte_3"></span></label>
+    <label class="option" id="lblOpte_4"><input type="radio"  id="inpOpte_4" name="optione" value="4"/> <span id="opte_4"></span></label>
+    <label class="option" id="lblOpte_5"><input type="radio"  id="inpOpte_5" name="optione" value="5"/> <span id="opte_5"></span></label>
+ </div>
+</div>
+
+
+ <div class="row">
+ <button id ="nextButton" type="button" class="next-btn" onclick="loadNextQuestion()">Próxima</button>
+
+ 
+  
+</div>   
+ <div class="row">
+ <div id="progress"></div>
+ 
+  </div>
+
+</div>  
+
+<div id="quizgrava" class="container" style="visibility:hidden" > 
+   <div class="form-row">
+  
+  
+  <h6 class="alert-heading">Prezado(a) participante !</h6>
+  <hr>
+  <div id="descPartGrv" class="question99"></div>
+  
+  <hr>
+  
+
+</div>
+ <hr><br>
+ <div class="form-row">
+<label id="RespForaPandDifLab" class="my-1 mr-2" for="RespForaPandDif">Acredita que se respondesse fora do período da pandemia, as respostas seriam diferentes ?</label>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="ForaPandn" name="RespForaPandDif" value= "Não" class="custom-control-input" required >
+  <label class="custom-control-label" for="ForaPandn">Não</label>
+
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="ForaPands" name="RespForaPandDif" value= "Sim" class="custom-control-input" required >
+  <label class="custom-control-label" for="ForaPands">Sim</label>
+  </div>
+ <span class='msg-erro msg-respand'></span>
+</div>
+
+<div class="form-row">
+    <label id="comentlab" for="coment">Caso queira, utilize este espaço para fazer comentários e/ou sugestões.</label>
+    <textarea class="form-control" id="textcoment" rows="3" name="Comentario"></textarea>
+  </div>
+ 
+ <div class="form-row">
+<button id="gravaButton" class="btn btn-primary" type="submit">Grava Questionário</button>
+</div>
+</div>
+
+
+
+<div id="quizfechamento" class="container" style="visibility:hidden" > 
+   <div class="form-row">
+  
+  <label id="TitDesc" ></label>
+
+</div>
+
+ <table id="Tabelaspec" class="table table-hover">
+  <thead>
+ 
+ 
+  </thead>
+  <tbody>
+<!---3--->
+  <tr>
+      <td colspan="2" id="f3desc"></td>
+</tr>
+ <tr>
+  
+  <th>Resultados</th>
+ 
+  <th>[Média]</th>
+  </tr>
+<tr>
+   
+    <td id="f3td0_2"></td>
+   
+    <td id="f3td0_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="f3td1_2"></td>
+  
+    <td id="f3td1_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="f3td2_2"></td>
+   
+    <td id="f3td2_4"></td>
+  </tr>
+  
+  
+<!---3--->
+
+
+<!---2--->
+
+<tr>
+     <td colspan="2" id="f2desc"></td>
+</tr>
+ <tr>
+  
+  <th>Resultados</th>
+ 
+  <th>[Média]</th>
+  </tr>
+ <tr>
+   
+    <td id="f2td0_2"></td>
+   
+    <td id="f2td0_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="f2td1_2"></td>
+   
+    <td id="f2td1_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="f2td2_2"></td>
+   
+    <td id="f2td2_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="f2td3_2"></td>
+   
+    <td id="f2td3_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="f2td4_2"></td>
+   
+    <td id="f2td4_4"></td>
+  </tr> 
+<!---2--->
+<!---1--->
+   <tr>
+     <td colspan="2" id="f1desc"></td>
+  </tr>
+ <tr>
+  
+  <th>Resultados</th>
+ 
+  <th>[Média]</th>
+  </tr>
+
+   <tr>
+      <td id="td0_2"></td>
+   
+    <td id="td0_4"></td>
+  </tr>
+  <tr>
+  
+    <td id="td1_2"></td>
+   
+    <td id="td1_4"></td>
+  </tr>
+  <tr>
+  
+    <td id="td2_2"></td>
+   
+    <td id="td2_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="td3_2"></td>
+   
+    <td id="td3_4"></td>
+  </tr>
+  <tr>
+   
+    <td id="td4_2"></td>
+  
+    <td id="td4_4"></td>
+  </tr>
+<!---1---> 
+ <tr>
+     <td colspan="2" id="ReferDesc"></td>
+  </tr> 
+
+
+</tbody>
+
+</table>
+
+  
+</div>
+
+  
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+    <script src="/js/question.js"></script>
+    <script src="/js/quiz-script.js"></script>
+<input type="hidden"  id="Fone"  name="Fone" value ="99999999999" />
+<input type="hidden"  id="Question_01"  name="Question_01" value ="" />
+<input type="hidden"  id="Perg_Op_A_01" name="Perg_Op_A_01" value ="" />
+<input type="hidden"  id="Resp_Op_A_01" name="Resp_Op_A_01" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_01" name="Rcdf_Op_A_01" value ="" />
+<input type="hidden"  id="Perg_Op_B_01" name="Perg_Op_B_01" value ="" />
+<input type="hidden"  id="Resp_Op_B_01" name="Resp_Op_B_01" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_01" name="Rcdf_Op_B_01" value ="" />
+<input type="hidden"  id="Perg_Op_C_01" name="Perg_Op_C_01" value ="" />
+<input type="hidden"  id="Resp_Op_C_01" name="Resp_Op_C_01" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_01" name="Rcdf_Op_C_01" value ="" />
+<input type="hidden"  id="Perg_Op_D_01" name="Perg_Op_D_01" value ="" />
+<input type="hidden"  id="Resp_Op_D_01" name="Resp_Op_D_01" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_01" name="Rcdf_Op_D_01" value ="" />
+<input type="hidden"  id="Perg_Op_E_01" name="Perg_Op_E_01" value ="" />
+<input type="hidden"  id="Resp_Op_E_01" name="Resp_Op_E_01" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_01" name="Rcdf_Op_E_01" value ="" />
+
+<input type="hidden"  id="Question_02"  name="Question_02" value ="" />
+<input type="hidden"  id="Perg_Op_A_02" name="Perg_Op_A_02" value ="" />
+<input type="hidden"  id="Resp_Op_A_02" name="Resp_Op_A_02" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_02" name="Rcdf_Op_A_02" value ="" />
+<input type="hidden"  id="Perg_Op_B_02" name="Perg_Op_B_02" value ="" />
+<input type="hidden"  id="Resp_Op_B_02" name="Resp_Op_B_02" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_02" name="Rcdf_Op_B_02" value ="" />
+<input type="hidden"  id="Perg_Op_C_02" name="Perg_Op_C_02" value ="" />
+<input type="hidden"  id="Resp_Op_C_02" name="Resp_Op_C_02" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_02" name="Rcdf_Op_C_02" value ="" />
+<input type="hidden"  id="Perg_Op_D_02" name="Perg_Op_D_02" value ="" />
+<input type="hidden"  id="Resp_Op_D_02" name="Resp_Op_D_02" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_02" name="Rcdf_Op_D_02" value ="" />
+<input type="hidden"  id="Perg_Op_E_02" name="Perg_Op_E_02" value ="" />
+<input type="hidden"  id="Resp_Op_E_02" name="Resp_Op_E_02" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_02" name="Rcdf_Op_E_02" value ="" />
+
+<input type="hidden"  id="Question_03"  name="Question_03" value ="" />
+<input type="hidden"  id="Perg_Op_A_03" name="Perg_Op_A_03" value ="" />
+<input type="hidden"  id="Resp_Op_A_03" name="Resp_Op_A_03" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_03" name="Rcdf_Op_A_03" value ="" />
+<input type="hidden"  id="Perg_Op_B_03" name="Perg_Op_B_03" value ="" />
+<input type="hidden"  id="Resp_Op_B_03" name="Resp_Op_B_03" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_03" name="Rcdf_Op_B_03" value ="" />
+<input type="hidden"  id="Perg_Op_C_03" name="Perg_Op_C_03" value ="" />
+<input type="hidden"  id="Resp_Op_C_03" name="Resp_Op_C_03" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_03" name="Rcdf_Op_C_03" value ="" />
+<input type="hidden"  id="Perg_Op_D_03" name="Perg_Op_D_03" value ="" />
+<input type="hidden"  id="Resp_Op_D_03" name="Resp_Op_D_03" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_03" name="Rcdf_Op_D_03" value ="" />
+<input type="hidden"  id="Perg_Op_E_03" name="Perg_Op_E_03" value ="" />
+<input type="hidden"  id="Resp_Op_E_03" name="Resp_Op_E_03" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_03" name="Rcdf_Op_E_03" value ="" />
+
+<input type="hidden"  id="Question_04"  name="Question_04" value ="" />
+<input type="hidden"  id="Perg_Op_A_04" name="Perg_Op_A_04" value ="" />
+<input type="hidden"  id="Resp_Op_A_04" name="Resp_Op_A_04" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_04" name="Rcdf_Op_A_04" value ="" />
+<input type="hidden"  id="Perg_Op_B_04" name="Perg_Op_B_04" value ="" />
+<input type="hidden"  id="Resp_Op_B_04" name="Resp_Op_B_04" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_04" name="Rcdf_Op_B_04" value ="" />
+<input type="hidden"  id="Perg_Op_C_04" name="Perg_Op_C_04" value ="" />
+<input type="hidden"  id="Resp_Op_C_04" name="Resp_Op_C_04" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_04" name="Rcdf_Op_C_04" value ="" />
+<input type="hidden"  id="Perg_Op_D_04" name="Perg_Op_D_04" value ="" />
+<input type="hidden"  id="Resp_Op_D_04" name="Resp_Op_D_04" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_04" name="Rcdf_Op_D_04" value ="" />
+<input type="hidden"  id="Perg_Op_E_04" name="Perg_Op_E_04" value ="" />
+<input type="hidden"  id="Resp_Op_E_04" name="Resp_Op_E_04" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_04" name="Rcdf_Op_E_04" value ="" />
+
+<input type="hidden"  id="Question_05"  name="Question_05" value ="" />
+<input type="hidden"  id="Perg_Op_A_05" name="Perg_Op_A_05" value ="" />
+<input type="hidden"  id="Resp_Op_A_05" name="Resp_Op_A_05" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_05" name="Rcdf_Op_A_05" value ="" />
+<input type="hidden"  id="Perg_Op_B_05" name="Perg_Op_B_05" value ="" />
+<input type="hidden"  id="Resp_Op_B_05" name="Resp_Op_B_05" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_05" name="Rcdf_Op_B_05" value ="" />
+<input type="hidden"  id="Perg_Op_C_05" name="Perg_Op_C_05" value ="" />
+<input type="hidden"  id="Resp_Op_C_05" name="Resp_Op_C_05" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_05" name="Rcdf_Op_C_05" value ="" />
+<input type="hidden"  id="Perg_Op_D_05" name="Perg_Op_D_05" value ="" />
+<input type="hidden"  id="Resp_Op_D_05" name="Resp_Op_D_05" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_05" name="Rcdf_Op_D_05" value ="" />
+<input type="hidden"  id="Perg_Op_E_05" name="Perg_Op_E_05" value ="" />
+<input type="hidden"  id="Resp_Op_E_05" name="Resp_Op_E_05" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_05" name="Rcdf_Op_E_05" value ="" />
+
+<input type="hidden"  id="Question_06"  name="Question_06" value ="" />
+<input type="hidden"  id="Perg_Op_A_06" name="Perg_Op_A_06" value ="" />
+<input type="hidden"  id="Resp_Op_A_06" name="Resp_Op_A_06" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_06" name="Rcdf_Op_A_06" value ="" />
+<input type="hidden"  id="Perg_Op_B_06" name="Perg_Op_B_06" value ="" />
+<input type="hidden"  id="Resp_Op_B_06" name="Resp_Op_B_06" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_06" name="Rcdf_Op_B_06" value ="" />
+<input type="hidden"  id="Perg_Op_C_06" name="Perg_Op_C_06" value ="" />
+<input type="hidden"  id="Resp_Op_C_06" name="Resp_Op_C_06" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_06" name="Rcdf_Op_C_06" value ="" />
+<input type="hidden"  id="Perg_Op_D_06" name="Perg_Op_D_06" value ="" />
+<input type="hidden"  id="Resp_Op_D_06" name="Resp_Op_D_06" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_06" name="Rcdf_Op_D_06" value ="" />
+<input type="hidden"  id="Perg_Op_E_06" name="Perg_Op_E_06" value ="" />
+<input type="hidden"  id="Resp_Op_E_06" name="Resp_Op_E_06" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_06" name="Rcdf_Op_E_06" value ="" />
+
+<input type="hidden"  id="Question_07"  name="Question_07" value ="" />
+<input type="hidden"  id="Perg_Op_A_07" name="Perg_Op_A_07" value ="" />
+<input type="hidden"  id="Resp_Op_A_07" name="Resp_Op_A_07" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_07" name="Rcdf_Op_A_07" value ="" />
+<input type="hidden"  id="Perg_Op_B_07" name="Perg_Op_B_07" value ="" />
+<input type="hidden"  id="Resp_Op_B_07" name="Resp_Op_B_07" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_07" name="Rcdf_Op_B_07" value ="" />
+<input type="hidden"  id="Perg_Op_C_07" name="Perg_Op_C_07" value ="" />
+<input type="hidden"  id="Resp_Op_C_07" name="Resp_Op_C_07" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_07" name="Rcdf_Op_C_07" value ="" />
+<input type="hidden"  id="Perg_Op_D_07" name="Perg_Op_D_07" value ="" />
+<input type="hidden"  id="Resp_Op_D_07" name="Resp_Op_D_07" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_07" name="Rcdf_Op_D_07" value ="" />
+<input type="hidden"  id="Perg_Op_E_07" name="Perg_Op_E_07" value ="" />
+<input type="hidden"  id="Resp_Op_E_07" name="Resp_Op_E_07" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_07" name="Rcdf_Op_E_07" value ="" />
+
+<input type="hidden"  id="Question_08"  name="Question_08" value ="" />
+<input type="hidden"  id="Perg_Op_A_08" name="Perg_Op_A_08" value ="" />
+<input type="hidden"  id="Resp_Op_A_08" name="Resp_Op_A_08" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_08" name="Rcdf_Op_A_08" value ="" />
+<input type="hidden"  id="Perg_Op_B_08" name="Perg_Op_B_08" value ="" />
+<input type="hidden"  id="Resp_Op_B_08" name="Resp_Op_B_08" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_08" name="Rcdf_Op_B_08" value ="" />
+<input type="hidden"  id="Perg_Op_C_08" name="Perg_Op_C_08" value ="" />
+<input type="hidden"  id="Resp_Op_C_08" name="Resp_Op_C_08" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_08" name="Rcdf_Op_C_08" value ="" />
+<input type="hidden"  id="Perg_Op_D_08" name="Perg_Op_D_08" value ="" />
+<input type="hidden"  id="Resp_Op_D_08" name="Resp_Op_D_08" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_08" name="Rcdf_Op_D_08" value ="" />
+<input type="hidden"  id="Perg_Op_E_08" name="Perg_Op_E_08" value ="" />
+<input type="hidden"  id="Resp_Op_E_08" name="Resp_Op_E_08" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_08" name="Rcdf_Op_E_08" value ="" />
+
+<input type="hidden"  id="Question_09"  name="Question_09" value ="" />
+<input type="hidden"  id="Perg_Op_A_09" name="Perg_Op_A_09" value ="" />
+<input type="hidden"  id="Resp_Op_A_09" name="Resp_Op_A_09" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_09" name="Rcdf_Op_A_09" value ="" />
+<input type="hidden"  id="Perg_Op_B_09" name="Perg_Op_B_09" value ="" />
+<input type="hidden"  id="Resp_Op_B_09" name="Resp_Op_B_09" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_09" name="Rcdf_Op_B_09" value ="" />
+<input type="hidden"  id="Perg_Op_C_09" name="Perg_Op_C_09" value ="" />
+<input type="hidden"  id="Resp_Op_C_09" name="Resp_Op_C_09" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_09" name="Rcdf_Op_C_09" value ="" />
+<input type="hidden"  id="Perg_Op_D_09" name="Perg_Op_D_09" value ="" />
+<input type="hidden"  id="Resp_Op_D_09" name="Resp_Op_D_09" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_09" name="Rcdf_Op_D_09" value ="" />
+<input type="hidden"  id="Perg_Op_E_09" name="Perg_Op_E_09" value ="" />
+<input type="hidden"  id="Resp_Op_E_09" name="Resp_Op_E_09" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_09" name="Rcdf_Op_E_09" value ="" />
+
+<input type="hidden"  id="Question_10"  name="Question_10" value ="" />
+<input type="hidden"  id="Perg_Op_A_10" name="Perg_Op_A_10" value ="" />
+<input type="hidden"  id="Resp_Op_A_10" name="Resp_Op_A_10" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_10" name="Rcdf_Op_A_10" value ="" />
+<input type="hidden"  id="Perg_Op_B_10" name="Perg_Op_B_10" value ="" />
+<input type="hidden"  id="Resp_Op_B_10" name="Resp_Op_B_10" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_10" name="Rcdf_Op_B_10" value ="" />
+<input type="hidden"  id="Perg_Op_C_10" name="Perg_Op_C_10" value ="" />
+<input type="hidden"  id="Resp_Op_C_10" name="Resp_Op_C_10" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_10" name="Rcdf_Op_C_10" value ="" />
+<input type="hidden"  id="Perg_Op_D_10" name="Perg_Op_D_10" value ="" />
+<input type="hidden"  id="Resp_Op_D_10" name="Resp_Op_D_10" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_10" name="Rcdf_Op_D_10" value ="" />
+<input type="hidden"  id="Perg_Op_E_10" name="Perg_Op_E_10" value ="" />
+<input type="hidden"  id="Resp_Op_E_10" name="Resp_Op_E_10" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_10" name="Rcdf_Op_E_10" value ="" />
+
+<input type="hidden"  id="Question_11"  name="Question_11" value ="" />
+<input type="hidden"  id="Perg_Op_A_11" name="Perg_Op_A_11" value ="" />
+<input type="hidden"  id="Resp_Op_A_11" name="Resp_Op_A_11" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_11" name="Rcdf_Op_A_11" value ="" />
+<input type="hidden"  id="Perg_Op_B_11" name="Perg_Op_B_11" value ="" />
+<input type="hidden"  id="Resp_Op_B_11" name="Resp_Op_B_11" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_11" name="Rcdf_Op_B_11" value ="" />
+<input type="hidden"  id="Perg_Op_C_11" name="Perg_Op_C_11" value ="" />
+<input type="hidden"  id="Resp_Op_C_11" name="Resp_Op_C_11" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_11" name="Rcdf_Op_C_11" value ="" />
+<input type="hidden"  id="Perg_Op_D_11" name="Perg_Op_D_11" value ="" />
+<input type="hidden"  id="Resp_Op_D_11" name="Resp_Op_D_11" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_11" name="Rcdf_Op_D_11" value ="" />
+<input type="hidden"  id="Perg_Op_E_11" name="Perg_Op_E_11" value ="" />
+<input type="hidden"  id="Resp_Op_E_11" name="Resp_Op_E_11" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_11" name="Rcdf_Op_E_11" value ="" />
+
+<input type="hidden"  id="Question_12"  name="Question_12" value ="" />
+<input type="hidden"  id="Perg_Op_A_12" name="Perg_Op_A_12" value ="" />
+<input type="hidden"  id="Resp_Op_A_12" name="Resp_Op_A_12" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_12" name="Rcdf_Op_A_12" value ="" />
+<input type="hidden"  id="Perg_Op_B_12" name="Perg_Op_B_12" value ="" />
+<input type="hidden"  id="Resp_Op_B_12" name="Resp_Op_B_12" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_12" name="Rcdf_Op_B_12" value ="" />
+<input type="hidden"  id="Perg_Op_C_12" name="Perg_Op_C_12" value ="" />
+<input type="hidden"  id="Resp_Op_C_12" name="Resp_Op_C_12" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_12" name="Rcdf_Op_C_12" value ="" />
+<input type="hidden"  id="Perg_Op_D_12" name="Perg_Op_D_12" value ="" />
+<input type="hidden"  id="Resp_Op_D_12" name="Resp_Op_D_12" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_12" name="Rcdf_Op_D_12" value ="" />
+<input type="hidden"  id="Perg_Op_E_12" name="Perg_Op_E_12" value ="" />
+<input type="hidden"  id="Resp_Op_E_12" name="Resp_Op_E_12" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_12" name="Rcdf_Op_E_12" value ="" />
+
+<input type="hidden"  id="Question_13"  name="Question_13" value ="" />
+<input type="hidden"  id="Perg_Op_A_13" name="Perg_Op_A_13" value ="" />
+<input type="hidden"  id="Resp_Op_A_13" name="Resp_Op_A_13" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_13" name="Rcdf_Op_A_13" value ="" />
+<input type="hidden"  id="Perg_Op_B_13" name="Perg_Op_B_13" value ="" />
+<input type="hidden"  id="Resp_Op_B_13" name="Resp_Op_B_13" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_13" name="Rcdf_Op_B_13" value ="" />
+<input type="hidden"  id="Perg_Op_C_13" name="Perg_Op_C_13" value ="" />
+<input type="hidden"  id="Resp_Op_C_13" name="Resp_Op_C_13" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_13" name="Rcdf_Op_C_13" value ="" />
+<input type="hidden"  id="Perg_Op_D_13" name="Perg_Op_D_13" value ="" />
+<input type="hidden"  id="Resp_Op_D_13" name="Resp_Op_D_13" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_13" name="Rcdf_Op_D_13" value ="" />
+<input type="hidden"  id="Perg_Op_E_13" name="Perg_Op_E_13" value ="" />
+<input type="hidden"  id="Resp_Op_E_13" name="Resp_Op_E_13" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_13" name="Rcdf_Op_E_13" value ="" />
+
+<input type="hidden"  id="Question_14"  name="Question_14" value ="" />
+<input type="hidden"  id="Perg_Op_A_14" name="Perg_Op_A_14" value ="" />
+<input type="hidden"  id="Resp_Op_A_14" name="Resp_Op_A_14" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_14" name="Rcdf_Op_A_14" value ="" />
+<input type="hidden"  id="Perg_Op_B_14" name="Perg_Op_B_14" value ="" />
+<input type="hidden"  id="Resp_Op_B_14" name="Resp_Op_B_14" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_14" name="Rcdf_Op_B_14" value ="" />
+<input type="hidden"  id="Perg_Op_C_14" name="Perg_Op_C_14" value ="" />
+<input type="hidden"  id="Resp_Op_C_14" name="Resp_Op_C_14" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_14" name="Rcdf_Op_C_14" value ="" />
+<input type="hidden"  id="Perg_Op_D_14" name="Perg_Op_D_14" value ="" />
+<input type="hidden"  id="Resp_Op_D_14" name="Resp_Op_D_14" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_14" name="Rcdf_Op_D_14" value ="" />
+<input type="hidden"  id="Perg_Op_E_14" name="Perg_Op_E_14" value ="" />
+<input type="hidden"  id="Resp_Op_E_14" name="Resp_Op_E_14" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_14" name="Rcdf_Op_E_14" value ="" />
+
+<input type="hidden"  id="Question_15"  name="Question_15" value ="" />
+<input type="hidden"  id="Perg_Op_A_15" name="Perg_Op_A_15" value ="" />
+<input type="hidden"  id="Resp_Op_A_15" name="Resp_Op_A_15" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_15" name="Rcdf_Op_A_15" value ="" />
+<input type="hidden"  id="Perg_Op_B_15" name="Perg_Op_B_15" value ="" />
+<input type="hidden"  id="Resp_Op_B_15" name="Resp_Op_B_15" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_15" name="Rcdf_Op_B_15" value ="" />
+<input type="hidden"  id="Perg_Op_C_15" name="Perg_Op_C_15" value ="" />
+<input type="hidden"  id="Resp_Op_C_15" name="Resp_Op_C_15" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_15" name="Rcdf_Op_C_15" value ="" />
+<input type="hidden"  id="Perg_Op_D_15" name="Perg_Op_D_15" value ="" />
+<input type="hidden"  id="Resp_Op_D_15" name="Resp_Op_D_15" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_15" name="Rcdf_Op_D_15" value ="" />
+<input type="hidden"  id="Perg_Op_E_15" name="Perg_Op_E_15" value ="" />
+<input type="hidden"  id="Resp_Op_E_15" name="Resp_Op_E_15" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_15" name="Rcdf_Op_E_15" value ="" />
+
+<input type="hidden"  id="Question_16"  name="Question_16" value ="" />
+<input type="hidden"  id="Perg_Op_A_16" name="Perg_Op_A_16" value ="" />
+<input type="hidden"  id="Resp_Op_A_16" name="Resp_Op_A_16" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_16" name="Rcdf_Op_A_16" value ="" />
+<input type="hidden"  id="Perg_Op_B_16" name="Perg_Op_B_16" value ="" />
+<input type="hidden"  id="Resp_Op_B_16" name="Resp_Op_B_16" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_16" name="Rcdf_Op_B_16" value ="" />
+<input type="hidden"  id="Perg_Op_C_16" name="Perg_Op_C_16" value ="" />
+<input type="hidden"  id="Resp_Op_C_16" name="Resp_Op_C_16" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_16" name="Rcdf_Op_C_16" value ="" />
+<input type="hidden"  id="Perg_Op_D_16" name="Perg_Op_D_16" value ="" />
+<input type="hidden"  id="Resp_Op_D_16" name="Resp_Op_D_16" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_16" name="Rcdf_Op_D_16" value ="" />
+<input type="hidden"  id="Perg_Op_E_16" name="Perg_Op_E_16" value ="" />
+<input type="hidden"  id="Resp_Op_E_16" name="Resp_Op_E_16" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_16" name="Rcdf_Op_E_16" value ="" />
+
+<input type="hidden"  id="Question_17"  name="Question_17" value ="" />
+<input type="hidden"  id="Perg_Op_A_17" name="Perg_Op_A_17" value ="" />
+<input type="hidden"  id="Resp_Op_A_17" name="Resp_Op_A_17" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_17" name="Rcdf_Op_A_17" value ="" />
+<input type="hidden"  id="Perg_Op_B_17" name="Perg_Op_B_17" value ="" />
+<input type="hidden"  id="Resp_Op_B_17" name="Resp_Op_B_17" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_17" name="Rcdf_Op_B_17" value ="" />
+<input type="hidden"  id="Perg_Op_C_17" name="Perg_Op_C_17" value ="" />
+<input type="hidden"  id="Resp_Op_C_17" name="Resp_Op_C_17" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_17" name="Rcdf_Op_C_17" value ="" />
+<input type="hidden"  id="Perg_Op_D_17" name="Perg_Op_D_17" value ="" />
+<input type="hidden"  id="Resp_Op_D_17" name="Resp_Op_D_17" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_17" name="Rcdf_Op_D_17" value ="" />
+<input type="hidden"  id="Perg_Op_E_17" name="Perg_Op_E_17" value ="" />
+<input type="hidden"  id="Resp_Op_E_17" name="Resp_Op_E_17" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_17" name="Rcdf_Op_E_17" value ="" />
+
+<input type="hidden"  id="Question_18"  name="Question_18" value ="" />
+<input type="hidden"  id="Perg_Op_A_18" name="Perg_Op_A_18" value ="" />
+<input type="hidden"  id="Resp_Op_A_18" name="Resp_Op_A_18" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_18" name="Rcdf_Op_A_18" value ="" />
+<input type="hidden"  id="Perg_Op_B_18" name="Perg_Op_B_18" value ="" />
+<input type="hidden"  id="Resp_Op_B_18" name="Resp_Op_B_18" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_18" name="Rcdf_Op_B_18" value ="" />
+<input type="hidden"  id="Perg_Op_C_18" name="Perg_Op_C_18" value ="" />
+<input type="hidden"  id="Resp_Op_C_18" name="Resp_Op_C_18" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_18" name="Rcdf_Op_C_18" value ="" />
+<input type="hidden"  id="Perg_Op_D_18" name="Perg_Op_D_18" value ="" />
+<input type="hidden"  id="Resp_Op_D_18" name="Resp_Op_D_18" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_18" name="Rcdf_Op_D_18" value ="" />
+<input type="hidden"  id="Perg_Op_E_18" name="Perg_Op_E_18" value ="" />
+<input type="hidden"  id="Resp_Op_E_18" name="Resp_Op_E_18" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_18" name="Rcdf_Op_E_18" value ="" />
+
+<input type="hidden"  id="Question_19"  name="Question_19" value ="" />
+<input type="hidden"  id="Perg_Op_A_19" name="Perg_Op_A_19" value ="" />
+<input type="hidden"  id="Resp_Op_A_19" name="Resp_Op_A_19" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_19" name="Rcdf_Op_A_19" value ="" />
+<input type="hidden"  id="Perg_Op_B_19" name="Perg_Op_B_19" value ="" />
+<input type="hidden"  id="Resp_Op_B_19" name="Resp_Op_B_19" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_19" name="Rcdf_Op_B_19" value ="" />
+<input type="hidden"  id="Perg_Op_C_19" name="Perg_Op_C_19" value ="" />
+<input type="hidden"  id="Resp_Op_C_19" name="Resp_Op_C_19" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_19" name="Rcdf_Op_C_19" value ="" />
+<input type="hidden"  id="Perg_Op_D_19" name="Perg_Op_D_19" value ="" />
+<input type="hidden"  id="Resp_Op_D_19" name="Resp_Op_D_19" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_19" name="Rcdf_Op_D_19" value ="" />
+<input type="hidden"  id="Perg_Op_E_19" name="Perg_Op_E_19" value ="" />
+<input type="hidden"  id="Resp_Op_E_19" name="Resp_Op_E_19" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_19" name="Rcdf_Op_E_19" value ="" />
+
+<input type="hidden"  id="Question_20"  name="Question_20" value ="" />
+<input type="hidden"  id="Perg_Op_A_20" name="Perg_Op_A_20" value ="" />
+<input type="hidden"  id="Resp_Op_A_20" name="Resp_Op_A_20" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_20" name="Rcdf_Op_A_20" value ="" />
+<input type="hidden"  id="Perg_Op_B_20" name="Perg_Op_B_20" value ="" />
+<input type="hidden"  id="Resp_Op_B_20" name="Resp_Op_B_20" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_20" name="Rcdf_Op_B_20" value ="" />
+<input type="hidden"  id="Perg_Op_C_20" name="Perg_Op_C_20" value ="" />
+<input type="hidden"  id="Resp_Op_C_20" name="Resp_Op_C_20" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_20" name="Rcdf_Op_C_20" value ="" />
+<input type="hidden"  id="Perg_Op_D_20" name="Perg_Op_D_20" value ="" />
+<input type="hidden"  id="Resp_Op_D_20" name="Resp_Op_D_20" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_20" name="Rcdf_Op_D_20" value ="" />
+<input type="hidden"  id="Perg_Op_E_20" name="Perg_Op_E_20" value ="" />
+<input type="hidden"  id="Resp_Op_E_20" name="Resp_Op_E_20" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_20" name="Rcdf_Op_E_20" value ="" />
+
+<input type="hidden"  id="Question_21"  name="Question_21" value ="" />
+<input type="hidden"  id="Perg_Op_A_21" name="Perg_Op_A_21" value ="" />
+<input type="hidden"  id="Resp_Op_A_21" name="Resp_Op_A_21" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_21" name="Rcdf_Op_A_21" value ="" />
+<input type="hidden"  id="Perg_Op_B_21" name="Perg_Op_B_21" value ="" />
+<input type="hidden"  id="Resp_Op_B_21" name="Resp_Op_B_21" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_21" name="Rcdf_Op_B_21" value ="" />
+<input type="hidden"  id="Perg_Op_C_21" name="Perg_Op_C_21" value ="" />
+<input type="hidden"  id="Resp_Op_C_21" name="Resp_Op_C_21" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_21" name="Rcdf_Op_C_21" value ="" />
+<input type="hidden"  id="Perg_Op_D_21" name="Perg_Op_D_21" value ="" />
+<input type="hidden"  id="Resp_Op_D_21" name="Resp_Op_D_21" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_21" name="Rcdf_Op_D_21" value ="" />
+<input type="hidden"  id="Perg_Op_E_21" name="Perg_Op_E_21" value ="" />
+<input type="hidden"  id="Resp_Op_E_21" name="Resp_Op_E_21" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_21" name="Rcdf_Op_E_21" value ="" />
+
+<input type="hidden"  id="Question_22"  name="Question_22" value ="" />
+<input type="hidden"  id="Perg_Op_A_22" name="Perg_Op_A_22" value ="" />
+<input type="hidden"  id="Resp_Op_A_22" name="Resp_Op_A_22" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_22" name="Rcdf_Op_A_22" value ="" />
+<input type="hidden"  id="Perg_Op_B_22" name="Perg_Op_B_22" value ="" />
+<input type="hidden"  id="Resp_Op_B_22" name="Resp_Op_B_22" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_22" name="Rcdf_Op_B_22" value ="" />
+<input type="hidden"  id="Perg_Op_C_22" name="Perg_Op_C_22" value ="" />
+<input type="hidden"  id="Resp_Op_C_22" name="Resp_Op_C_22" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_22" name="Rcdf_Op_C_22" value ="" />
+<input type="hidden"  id="Perg_Op_D_22" name="Perg_Op_D_22" value ="" />
+<input type="hidden"  id="Resp_Op_D_22" name="Resp_Op_D_22" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_22" name="Rcdf_Op_D_22" value ="" />
+<input type="hidden"  id="Perg_Op_E_22" name="Perg_Op_E_22" value ="" />
+<input type="hidden"  id="Resp_Op_E_22" name="Resp_Op_E_22" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_22" name="Rcdf_Op_E_22" value ="" />
+
+<input type="hidden"  id="Question_23"  name="Question_23" value ="" />
+<input type="hidden"  id="Perg_Op_A_23" name="Perg_Op_A_23" value ="" />
+<input type="hidden"  id="Resp_Op_A_23" name="Resp_Op_A_23" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_23" name="Rcdf_Op_A_23" value ="" />
+<input type="hidden"  id="Perg_Op_B_23" name="Perg_Op_B_23" value ="" />
+<input type="hidden"  id="Resp_Op_B_23" name="Resp_Op_B_23" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_23" name="Rcdf_Op_B_23" value ="" />
+<input type="hidden"  id="Perg_Op_C_23" name="Perg_Op_C_23" value ="" />
+<input type="hidden"  id="Resp_Op_C_23" name="Resp_Op_C_23" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_23" name="Rcdf_Op_C_23" value ="" />
+<input type="hidden"  id="Perg_Op_D_23" name="Perg_Op_D_23" value ="" />
+<input type="hidden"  id="Resp_Op_D_23" name="Resp_Op_D_23" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_23" name="Rcdf_Op_D_23" value ="" />
+<input type="hidden"  id="Perg_Op_E_23" name="Perg_Op_E_23" value ="" />
+<input type="hidden"  id="Resp_Op_E_23" name="Resp_Op_E_23" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_23" name="Rcdf_Op_E_23" value ="" />
+
+<input type="hidden"  id="Question_24"  name="Question_24" value ="" />
+<input type="hidden"  id="Perg_Op_A_24" name="Perg_Op_A_24" value ="" />
+<input type="hidden"  id="Resp_Op_A_24" name="Resp_Op_A_24" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_24" name="Rcdf_Op_A_24" value ="" />
+<input type="hidden"  id="Perg_Op_B_24" name="Perg_Op_B_24" value ="" />
+<input type="hidden"  id="Resp_Op_B_24" name="Resp_Op_B_24" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_24" name="Rcdf_Op_B_24" value ="" />
+<input type="hidden"  id="Perg_Op_C_24" name="Perg_Op_C_24" value ="" />
+<input type="hidden"  id="Resp_Op_C_24" name="Resp_Op_C_24" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_24" name="Rcdf_Op_C_24" value ="" />
+<input type="hidden"  id="Perg_Op_D_24" name="Perg_Op_D_24" value ="" />
+<input type="hidden"  id="Resp_Op_D_24" name="Resp_Op_D_24" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_24" name="Rcdf_Op_D_24" value ="" />
+<input type="hidden"  id="Perg_Op_E_24" name="Perg_Op_E_24" value ="" />
+<input type="hidden"  id="Resp_Op_E_24" name="Resp_Op_E_24" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_24" name="Rcdf_Op_E_24" value ="" />
+
+<input type="hidden"  id="Question_25"  name="Question_25" value ="" />
+<input type="hidden"  id="Perg_Op_A_25" name="Perg_Op_A_25" value ="" />
+<input type="hidden"  id="Resp_Op_A_25" name="Resp_Op_A_25" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_25" name="Rcdf_Op_A_25" value ="" />
+<input type="hidden"  id="Perg_Op_B_25" name="Perg_Op_B_25" value ="" />
+<input type="hidden"  id="Resp_Op_B_25" name="Resp_Op_B_25" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_25" name="Rcdf_Op_B_25" value ="" />
+<input type="hidden"  id="Perg_Op_C_25" name="Perg_Op_C_25" value ="" />
+<input type="hidden"  id="Resp_Op_C_25" name="Resp_Op_C_25" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_25" name="Rcdf_Op_C_25" value ="" />
+<input type="hidden"  id="Perg_Op_D_25" name="Perg_Op_D_25" value ="" />
+<input type="hidden"  id="Resp_Op_D_25" name="Resp_Op_D_25" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_25" name="Rcdf_Op_D_25" value ="" />
+<input type="hidden"  id="Perg_Op_E_25" name="Perg_Op_E_25" value ="" />
+<input type="hidden"  id="Resp_Op_E_25" name="Resp_Op_E_25" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_25" name="Rcdf_Op_E_25" value ="" />
+
+<input type="hidden"  id="Question_26"  name="Question_26" value ="" />
+<input type="hidden"  id="Perg_Op_A_26" name="Perg_Op_A_26" value ="" />
+<input type="hidden"  id="Resp_Op_A_26" name="Resp_Op_A_26" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_26" name="Rcdf_Op_A_26" value ="" />
+<input type="hidden"  id="Perg_Op_B_26" name="Perg_Op_B_26" value ="" />
+<input type="hidden"  id="Resp_Op_B_26" name="Resp_Op_B_26" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_26" name="Rcdf_Op_B_26" value ="" />
+<input type="hidden"  id="Perg_Op_C_26" name="Perg_Op_C_26" value ="" />
+<input type="hidden"  id="Resp_Op_C_26" name="Resp_Op_C_26" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_26" name="Rcdf_Op_C_26" value ="" />
+<input type="hidden"  id="Perg_Op_D_26" name="Perg_Op_D_26" value ="" />
+<input type="hidden"  id="Resp_Op_D_26" name="Resp_Op_D_26" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_26" name="Rcdf_Op_D_26" value ="" />
+<input type="hidden"  id="Perg_Op_E_26" name="Perg_Op_E_26" value ="" />
+<input type="hidden"  id="Resp_Op_E_26" name="Resp_Op_E_26" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_26" name="Rcdf_Op_E_26" value ="" />
+
+<input type="hidden"  id="Question_27"  name="Question_27" value ="" />
+<input type="hidden"  id="Perg_Op_A_27" name="Perg_Op_A_27" value ="" />
+<input type="hidden"  id="Resp_Op_A_27" name="Resp_Op_A_27" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_27" name="Rcdf_Op_A_27" value ="" />
+<input type="hidden"  id="Perg_Op_B_27" name="Perg_Op_B_27" value ="" />
+<input type="hidden"  id="Resp_Op_B_27" name="Resp_Op_B_27" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_27" name="Rcdf_Op_B_27" value ="" />
+<input type="hidden"  id="Perg_Op_C_27" name="Perg_Op_C_27" value ="" />
+<input type="hidden"  id="Resp_Op_C_27" name="Resp_Op_C_27" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_27" name="Rcdf_Op_C_27" value ="" />
+<input type="hidden"  id="Perg_Op_D_27" name="Perg_Op_D_27" value ="" />
+<input type="hidden"  id="Resp_Op_D_27" name="Resp_Op_D_27" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_27" name="Rcdf_Op_D_27" value ="" />
+<input type="hidden"  id="Perg_Op_E_27" name="Perg_Op_E_27" value ="" />
+<input type="hidden"  id="Resp_Op_E_27" name="Resp_Op_E_27" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_27" name="Rcdf_Op_E_27" value ="" />
+
+<input type="hidden"  id="Question_28"  name="Question_28" value ="" />
+<input type="hidden"  id="Perg_Op_A_28" name="Perg_Op_A_28" value ="" />
+<input type="hidden"  id="Resp_Op_A_28" name="Resp_Op_A_28" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_28" name="Rcdf_Op_A_28" value ="" />
+<input type="hidden"  id="Perg_Op_B_28" name="Perg_Op_B_28" value ="" />
+<input type="hidden"  id="Resp_Op_B_28" name="Resp_Op_B_28" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_28" name="Rcdf_Op_B_28" value ="" />
+<input type="hidden"  id="Perg_Op_C_28" name="Perg_Op_C_28" value ="" />
+<input type="hidden"  id="Resp_Op_C_28" name="Resp_Op_C_28" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_28" name="Rcdf_Op_C_28" value ="" />
+<input type="hidden"  id="Perg_Op_D_28" name="Perg_Op_D_28" value ="" />
+<input type="hidden"  id="Resp_Op_D_28" name="Resp_Op_D_28" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_28" name="Rcdf_Op_D_28" value ="" />
+<input type="hidden"  id="Perg_Op_E_28" name="Perg_Op_E_28" value ="" />
+<input type="hidden"  id="Resp_Op_E_28" name="Resp_Op_E_28" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_28" name="Rcdf_Op_E_28" value ="" />
+
+<input type="hidden"  id="Question_29"  name="Question_29" value ="" />
+<input type="hidden"  id="Perg_Op_A_29" name="Perg_Op_A_29" value ="" />
+<input type="hidden"  id="Resp_Op_A_29" name="Resp_Op_A_29" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_29" name="Rcdf_Op_A_29" value ="" />
+<input type="hidden"  id="Perg_Op_B_29" name="Perg_Op_B_29" value ="" />
+<input type="hidden"  id="Resp_Op_B_29" name="Resp_Op_B_29" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_29" name="Rcdf_Op_B_29" value ="" />
+<input type="hidden"  id="Perg_Op_C_29" name="Perg_Op_C_29" value ="" />
+<input type="hidden"  id="Resp_Op_C_29" name="Resp_Op_C_29" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_29" name="Rcdf_Op_C_29" value ="" />
+<input type="hidden"  id="Perg_Op_D_29" name="Perg_Op_D_29" value ="" />
+<input type="hidden"  id="Resp_Op_D_29" name="Resp_Op_D_29" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_29" name="Rcdf_Op_D_29" value ="" />
+<input type="hidden"  id="Perg_Op_E_29" name="Perg_Op_E_29" value ="" />
+<input type="hidden"  id="Resp_Op_E_29" name="Resp_Op_E_29" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_29" name="Rcdf_Op_E_29" value ="" />
+
+<input type="hidden"  id="Question_30"  name="Question_30" value ="" />
+<input type="hidden"  id="Perg_Op_A_30" name="Perg_Op_A_30" value ="" />
+<input type="hidden"  id="Resp_Op_A_30" name="Resp_Op_A_30" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_30" name="Rcdf_Op_A_30" value ="" />
+<input type="hidden"  id="Perg_Op_B_30" name="Perg_Op_B_30" value ="" />
+<input type="hidden"  id="Resp_Op_B_30" name="Resp_Op_B_30" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_30" name="Rcdf_Op_B_30" value ="" />
+<input type="hidden"  id="Perg_Op_C_30" name="Perg_Op_C_30" value ="" />
+<input type="hidden"  id="Resp_Op_C_30" name="Resp_Op_C_30" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_30" name="Rcdf_Op_C_30" value ="" />
+<input type="hidden"  id="Perg_Op_D_30" name="Perg_Op_D_30" value ="" />
+<input type="hidden"  id="Resp_Op_D_30" name="Resp_Op_D_30" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_30" name="Rcdf_Op_D_30" value ="" />
+<input type="hidden"  id="Perg_Op_E_30" name="Perg_Op_E_30" value ="" />
+<input type="hidden"  id="Resp_Op_E_30" name="Resp_Op_E_30" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_30" name="Rcdf_Op_E_30" value ="" />
+
+<input type="hidden"  id="Question_31"  name="Question_31" value ="" />
+<input type="hidden"  id="Perg_Op_A_31" name="Perg_Op_A_31" value ="" />
+<input type="hidden"  id="Resp_Op_A_31" name="Resp_Op_A_31" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_31" name="Rcdf_Op_A_31" value ="" />
+<input type="hidden"  id="Perg_Op_B_31" name="Perg_Op_B_31" value ="" />
+<input type="hidden"  id="Resp_Op_B_31" name="Resp_Op_B_31" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_31" name="Rcdf_Op_B_31" value ="" />
+<input type="hidden"  id="Perg_Op_C_31" name="Perg_Op_C_31" value ="" />
+<input type="hidden"  id="Resp_Op_C_31" name="Resp_Op_C_31" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_31" name="Rcdf_Op_C_31" value ="" />
+<input type="hidden"  id="Perg_Op_D_31" name="Perg_Op_D_31" value ="" />
+<input type="hidden"  id="Resp_Op_D_31" name="Resp_Op_D_31" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_31" name="Rcdf_Op_D_31" value ="" />
+<input type="hidden"  id="Perg_Op_E_31" name="Perg_Op_E_31" value ="" />
+<input type="hidden"  id="Resp_Op_E_31" name="Resp_Op_E_31" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_31" name="Rcdf_Op_E_31" value ="" />
+
+<input type="hidden"  id="Question_32"  name="Question_32" value ="" />
+<input type="hidden"  id="Perg_Op_A_32" name="Perg_Op_A_32" value ="" />
+<input type="hidden"  id="Resp_Op_A_32" name="Resp_Op_A_32" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_32" name="Rcdf_Op_A_32" value ="" />
+<input type="hidden"  id="Perg_Op_B_32" name="Perg_Op_B_32" value ="" />
+<input type="hidden"  id="Resp_Op_B_32" name="Resp_Op_B_32" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_32" name="Rcdf_Op_B_32" value ="" />
+<input type="hidden"  id="Perg_Op_C_32" name="Perg_Op_C_32" value ="" />
+<input type="hidden"  id="Resp_Op_C_32" name="Resp_Op_C_32" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_32" name="Rcdf_Op_C_32" value ="" />
+<input type="hidden"  id="Perg_Op_D_32" name="Perg_Op_D_32" value ="" />
+<input type="hidden"  id="Resp_Op_D_32" name="Resp_Op_D_32" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_32" name="Rcdf_Op_D_32" value ="" />
+<input type="hidden"  id="Perg_Op_E_32" name="Perg_Op_E_32" value ="" />
+<input type="hidden"  id="Resp_Op_E_32" name="Resp_Op_E_32" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_32" name="Rcdf_Op_E_32" value ="" />
+
+<input type="hidden"  id="Question_33"  name="Question_33" value ="" />
+<input type="hidden"  id="Perg_Op_A_33" name="Perg_Op_A_33" value ="" />
+<input type="hidden"  id="Resp_Op_A_33" name="Resp_Op_A_33" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_33" name="Rcdf_Op_A_33" value ="" />
+<input type="hidden"  id="Perg_Op_B_33" name="Perg_Op_B_33" value ="" />
+<input type="hidden"  id="Resp_Op_B_33" name="Resp_Op_B_33" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_33" name="Rcdf_Op_B_33" value ="" />
+<input type="hidden"  id="Perg_Op_C_33" name="Perg_Op_C_33" value ="" />
+<input type="hidden"  id="Resp_Op_C_33" name="Resp_Op_C_33" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_33" name="Rcdf_Op_C_33" value ="" />
+<input type="hidden"  id="Perg_Op_D_33" name="Perg_Op_D_33" value ="" />
+<input type="hidden"  id="Resp_Op_D_33" name="Resp_Op_D_33" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_33" name="Rcdf_Op_D_33" value ="" />
+<input type="hidden"  id="Perg_Op_E_33" name="Perg_Op_E_33" value ="" />
+<input type="hidden"  id="Resp_Op_E_33" name="Resp_Op_E_33" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_33" name="Rcdf_Op_E_33" value ="" />
+
+<input type="hidden"  id="Question_34"  name="Question_34" value ="" />
+<input type="hidden"  id="Perg_Op_A_34" name="Perg_Op_A_34" value ="" />
+<input type="hidden"  id="Resp_Op_A_34" name="Resp_Op_A_34" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_34" name="Rcdf_Op_A_34" value ="" />
+<input type="hidden"  id="Perg_Op_B_34" name="Perg_Op_B_34" value ="" />
+<input type="hidden"  id="Resp_Op_B_34" name="Resp_Op_B_34" value ="" />
+<input type="hidden"  id="Rcdf_Op_B_34" name="Rcdf_Op_B_34" value ="" />
+<input type="hidden"  id="Perg_Op_C_34" name="Perg_Op_C_34" value ="" />
+<input type="hidden"  id="Resp_Op_C_34" name="Resp_Op_C_34" value ="" />
+<input type="hidden"  id="Rcdf_Op_C_34" name="Rcdf_Op_C_34" value ="" />
+<input type="hidden"  id="Perg_Op_D_34" name="Perg_Op_D_34" value ="" />
+<input type="hidden"  id="Resp_Op_D_34" name="Resp_Op_D_34" value ="" />
+<input type="hidden"  id="Rcdf_Op_D_34" name="Rcdf_Op_D_34" value ="" />
+<input type="hidden"  id="Perg_Op_E_34" name="Perg_Op_E_34" value ="" />
+<input type="hidden"  id="Resp_Op_E_34" name="Resp_Op_E_34" value ="" />
+<input type="hidden"  id="Rcdf_Op_E_34" name="Rcdf_Op_E_34" value ="" />
+
+<input type="hidden"  id="Question_35"  name="Question_35" value ="" />
+<input type="hidden"  id="Perg_Op_A_35" name="Perg_Op_A_35" value ="" />
+<input type="hidden"  id="Resp_Op_A_35" name="Resp_Op_A_35" value ="" />
+<input type="hidden"  id="Rcdf_Op_A_35" name="Rcdf_Op_A_35" value ="" />
+
+<input type="hidden"  id="Stg_tit_princ" name="Stg_tit_princ" value ="" />
+<input type="hidden"  id="Stg_tit_00" name="Stg_tit_00" value ="" />
+<input type="hidden"  id="Stg_td_02" name="Stg_td_02" value ="" />
+<input type="hidden"  id="Stg_ct_04" name="Stg_ct_04" value ="" />
+<input type="hidden"  id="Stg_td_12" name="Stg_td_12" value ="" />
+<input type="hidden"  id="Stg_ct_14" name="Stg_ct_14" value ="" />
+<input type="hidden"  id="Stg_td_22" name="Stg_td_22" value ="" />
+<input type="hidden"  id="Stg_ct_24" name="Stg_ct_24" value ="" />
+<input type="hidden"  id="Stg_td_32" name="Stg_td_32" value ="" />
+<input type="hidden"  id="Stg_ct_34" name="Stg_ct_34" value ="" />
+<input type="hidden"  id="Stg_td_42" name="Stg_td_42" value ="" />
+<input type="hidden"  id="Stg_ct_44" name="Stg_ct_44" value ="" />
+
+<input type="hidden"  id="Stg_tit_01" name="Stg_tit_01" value ="" />
+<input type="hidden"  id="Stgf2_td_02" name="Stgf2_td_02" value ="" />
+<input type="hidden"  id="Stgf2_ct_04" name="Stgf2_ct_04" value ="" />
+<input type="hidden"  id="Stgf2_td_12" name="Stgf2_td_12" value ="" />
+<input type="hidden"  id="Stgf2_ct_14" name="Stgf2_ct_14" value ="" />
+<input type="hidden"  id="Stgf2_td_22" name="Stgf2_td_22" value ="" />
+<input type="hidden"  id="Stgf2_ct_24" name="Stgf2_ct_24" value ="" />
+<input type="hidden"  id="Stgf2_td_32" name="Stgf2_td_32" value ="" />
+<input type="hidden"  id="Stgf2_ct_34" name="Stgf2_ct_34" value ="" />
+<input type="hidden"  id="Stgf2_td_42" name="Stgf2_td_42" value ="" />
+<input type="hidden"  id="Stgf2_ct_44" name="Stgf2_ct_44" value ="" />
+
+<input type="hidden"  id="Stg_tit_02" name="Stg_tit_02" value ="" />
+<input type="hidden"  id="Stgf3_td_02" name="Stgf3_td_02" value ="" />
+<input type="hidden"  id="Stgf3_ct_04" name="Stgf3_ct_04" value ="" />
+<input type="hidden"  id="Stgf3_td_12" name="Stgf3_td_12" value ="" />
+<input type="hidden"  id="Stgf3_ct_14" name="Stgf3_ct_14" value ="" />
+<input type="hidden"  id="Stgf3_td_22" name="Stgf3_td_22" value ="" />
+<input type="hidden"  id="Stgf3_ct_24" name="Stgf3_ct_24" value ="" />
+<input type="hidden"  id="StgReferDesc" name="StgReferDesc" value ="" />
+
+
+
+
+
+</form>
+
+</body>  

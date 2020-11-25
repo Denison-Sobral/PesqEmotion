@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css">
+   <!-- <link href="node_modules/sweetalert2/dist/sweetalert2.css" rel="styleshett"/> -->
+   <!-- <link href="style.css" rel="stylesheet"/> -->
+
+    <link rel="stylesheet" href="/css/quiz.css" >
+
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0>"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pesquisa Emoção no Trabalho</title>
+    <meta name="description" content="Pesquisa emoção no Trabalho, Pesquisa Psicologia">
+    <meta name ="keywords" content="Pesquisa Emoção no Trabalho, Pesquisa Emoção, Questionario de Pesquisa Emoção">
+    <meta name="robots" content="index">
+    <meta name="author" content="Denison Sobral">
+    <script type="text/javascript">
+    function loadPage(){
+  //  document.getElementById("btn").addEventListener("click", escrever);
+  //  document.getElementById('Lideran').addEventListener("click",escrever('N'));
+    document.getElementById('Lideras').addEventListener("click",escrevers);
+    document.getElementById('Lideran').addEventListener("click",escrevern);
+};
+function escrevers() {
+  //     document.getElementById("Emsg").innerHTML = "Evento Click Sim";
+       document.getElementById("QtPessoasLab").style.visibility = 'visible';
+       document.getElementById("QtPessoas").style.visibility = 'visible';
+         document.getElementById("QtPessoas").value = '0';
+       document.getElementById("TempoLideraPessoasLab").style.visibility = 'visible';
+       document.getElementById("TempoLideraPessoas").style.visibility = 'visible';
+         document.getElementById("TempoLideraPessoas").value = '0';
+      }
+function escrevern() {
+ //      document.getElementById("Emsg").innerHTML = "Evento Click Não";
+       document.getElementById("QtPessoasLab").style.visibility = 'hidden';
+       document.getElementById("QtPessoas").style.visibility = 'hidden';
+        document.getElementById("QtPessoas").value = '0';
+       document.getElementById("TempoLideraPessoasLab").style.visibility = 'hidden';
+       document.getElementById("TempoLideraPessoas").style.visibility = 'hidden';
+       document.getElementById("TempoLideraPessoas").value = '0';
+     }
+
+window.onload = loadPage;
+</script>
+</head>
+<body>
+   {{>_navbar}}
+  
+  {{{body}}}
+  </div>
+</body>
+
+<script src="/js/bootstrap.js"></script>
+
+
+</html>
